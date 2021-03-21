@@ -2,6 +2,28 @@
   box-sizing: border-box;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-name {
+  display: flex;
+  margin: 0 1rem;
+  align-items: center;
+}
+
+.navbar__flex {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: black;
+  margin: 0 1rem;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
