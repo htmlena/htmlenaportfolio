@@ -50,6 +50,11 @@ h1 {
   border-radius: 50%;
 }
 
+.icon {
+  width: 2rem;
+  margin: 0.3rem;
+}
+
 #particles {
   position: absolute;
   top: 0;
