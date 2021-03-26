@@ -1,4 +1,4 @@
-* {
+html {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
@@ -23,7 +23,7 @@
 .navbar__flex {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -62,4 +62,73 @@ h1 {
   height: 100vh;
   width: 100%;
   z-index: -1;
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .logo-name {
+    display: flex;
+    margin: 1.2rem 1.2rem;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.1rem;
+  }
+
+  .navbar__flex {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar__link {
+    text-decoration: none;
+    color: black;
+    margin: 1.2rem 1.5rem;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  h1 {
+    font-weight: 300;
+  }
+
+  .main-photo {
+    width: 10rem;
+    border-radius: 50%;
+  }
+
+  .icon {
+    width: 2rem;
+    margin: 0.3rem;
+  }
+
+  #particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+  }
 }
