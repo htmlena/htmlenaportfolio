@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  min-width: 20rem;
 }
 
 .navbar {
@@ -14,6 +15,7 @@ html {
 
 .logo-name {
   display: flex;
+  max-width: 10rem;
   margin: 1.2rem 1.2rem;
   align-items: center;
   font-weight: 900;
@@ -21,8 +23,8 @@ html {
 }
 
 .navbar__flex {
+  display: none;
   list-style-type: none;
-  display: flex;
   justify-content: flex-end;
   align-items: center;
 }
@@ -43,6 +45,7 @@ html {
 
 h1 {
   font-weight: 300;
+  text-align: center;
 }
 
 .main-photo {
@@ -68,67 +71,10 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  .navbar__flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 992px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-
-  .logo-name {
-    display: flex;
-    margin: 1.2rem 1.2rem;
-    align-items: center;
-    font-weight: 900;
-    font-size: 1.1rem;
-  }
-
-  .navbar__flex {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navbar__link {
-    text-decoration: none;
-    color: black;
-    margin: 1.2rem 1.5rem;
-  }
-
-  .header-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-
-  h1 {
-    font-weight: 300;
-  }
-
-  .main-photo {
-    width: 10rem;
-    border-radius: 50%;
-  }
-
-  .icon {
-    width: 2rem;
-    margin: 0.3rem;
-  }
-
-  #particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: -1;
-  }
 }
