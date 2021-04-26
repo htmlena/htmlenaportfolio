@@ -88,6 +88,7 @@ h1 {
 .about-me-photo {
   max-width: 320px;
   margin-bottom: 2rem;
+  align-self: flex-start;
 }
 
 #particles {
