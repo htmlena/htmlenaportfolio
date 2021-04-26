@@ -4,6 +4,10 @@ html {
   min-width: 20rem;
 }
 
+body {
+  position: relative;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -58,23 +62,77 @@ h1 {
   margin: 0.3rem;
 }
 
+/* about me section */
+
+.about-me-container {
+  padding: 3rem 2rem 0;
+}
+
+.about-me-header,
+.projects-header {
+  text-align: center;
+}
+
+.about-me-text {
+  text-align: justify;
+  line-height: 1.7rem;
+}
+
+.about-me-photos-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.about-me-photo {
+  max-width: 320px;
+  margin-bottom: 2rem;
+}
+
 #particles {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  bottom: 0;
+  right: 0;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: -1;
 }
 
 @media (min-width: 375px) {
+  .about-me-photos-container {
+    max-width: 375px;
+}
+
+.about-me-photo {
+  max-width: 375px;
 }
 
 @media (min-width: 768px) {
   .navbar__flex {
     display: flex;
   }
+
+  .about-me-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .about-me-photos-container {
+    max-width: 720px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  .about-me-photo {
+    max-width: 350px;
+    
+  }
 }
 
 @media (min-width: 992px) {
+
 }
