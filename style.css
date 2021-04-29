@@ -91,6 +91,21 @@ h1 {
   align-self: flex-start;
 }
 
+/* Projects section */
+
+.projects-container {
+  padding: 3rem 2rem 0;
+}
+
+.project-name {
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.project-demo {
+  max-width: 320px;
+}
+
 #particles {
   position: absolute;
   top: 0;
@@ -133,6 +148,7 @@ h1 {
     
   }
 }
+
 
 @media (min-width: 992px) {
 
