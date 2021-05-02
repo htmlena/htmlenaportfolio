@@ -39,6 +39,11 @@ body {
   margin: 1.2rem 1.5rem;
 }
 
+.navbar__link:hover {
+  text-decoration: underline;
+  
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -50,6 +55,10 @@ body {
 h1 {
   font-weight: 300;
   text-align: center;
+}
+
+.heading {
+  margin: 2rem 0 0;
 }
 
 .main-photo {
@@ -99,14 +108,26 @@ h1 {
 
 .project-name {
   font-weight: 200;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+.project-description {
+  line-height: 1.7rem;
+  text-align: justify;
 }
 
 .project-demo {
-  max-width: 320px;
+  width: 100%;
+  padding: 1rem 0;
 }
 
 .project-link {
+  text-decoration:none;
+  color: gray;
+  margin-right: 2rem;
+}
+
+.project-link:hover {
   text-decoration:underline;
   color: black;
 }
@@ -153,6 +174,18 @@ h1 {
     max-width: 350px;
     
   }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .single-project {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+
 }
 
 
