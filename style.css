@@ -41,8 +41,8 @@ body {
   cursor: pointer;
 }
 
-.nav-btn:focus {
-  outline: none;
+.accessible-text {
+  display: none;
 }
 
 .navbar__flex-container {
