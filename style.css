@@ -183,6 +183,8 @@ h1 {
   z-index: -1;
 }
 
+/* Responsive */
+
 @media (min-width: 375px) {
   .about-me-photos-container {
     max-width: 375px;
