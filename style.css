@@ -49,8 +49,9 @@ body {
   position: absolute;
   right: 0;
   top: 3.2rem;
-  background-color: rgba(31, 31, 28, 0.05);
-  backdrop-filter: blur(2px);
+  background-color: white;
+  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 100px 80px rgba(0, 0, 0, 0.07);
   padding: 0 1rem;
   border-radius: 4px;
 }
@@ -132,7 +133,7 @@ h1 {
 }
 
 .about-me-photo {
-  max-width: 320px;
+  width: 100%;
   margin-bottom: 2rem;
   align-self: flex-start;
 }
@@ -226,6 +227,7 @@ h1 {
     align-items: center;
     justify-content: space-evenly;
     background-color: unset;
+    box-shadow: none;
   }
 
   .navbar__list {
