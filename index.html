@@ -16,17 +16,20 @@
   <body>
     <nav class="navbar">
       <p class="logo-name">Lenka Shynkarova</p>
-      <ul class="navbar__flex">
-        <li>
-          <a class="navbar__link" href="index.html">Home</a>
-        </li>
-        <li>
-          <a class="navbar__link" href="about.html">About me</a>
-        </li>
-        <li>
-          <a class="navbar__link" href="projects.html">Project</a>
-        </li>
-      </ul>
+      <div class="navbar__flex-container closed">
+        <ul class="navbar__flex">
+          <li class="navbar__list">
+            <a class="navbar__link" href="index.html">Home</a>
+          </li>
+          <li class="navbar__list">
+            <a class="navbar__link" href="about.html">About me</a>
+          </li>
+          <li class="navbar__list">
+            <a class="navbar__link" href="projects.html">Project</a>
+          </li>
+        </ul>
+      </div>
+      <button class="nav-btn" id="nav-btn"></button>
     </nav>
     <div class="header-container">
       <img class="main-photo" src="mainohoto.jpg" alt="" />
@@ -48,5 +51,6 @@
     <script>
       particlesJS.load('particles', 'particles.json');
     </script>
+    <script src="index.js"></script>
   </body>
 </html>
